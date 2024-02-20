@@ -14,7 +14,7 @@ class CorsConfig: WebMvcConfigurer{
             .allowedOrigins(
                 "http://localhost:8000",
                 "http://localhost:5173/",
-                "https://guardian-seguro-fronted.vercel.app")
+                "https://guardian-en-l-nea-frontend.vercel.app")
             .allowedMethods("POST", "GET", "post")
             .allowCredentials(true)
 
