@@ -18,7 +18,7 @@ class AlertService {
     fun findAll(): List<Any> {
         val recentAlerts = alertRepository.findAllWithUserName()
 
-        return recentAlerts.sortedByDescending { it.createdAt }.take(3)
+        return recentAlerts.sortedByDescending { it.createdAt }
     }
     fun save(alert: Alert): Alert{
         val userReferenced = userRepository.findById(alert.userId)?:
